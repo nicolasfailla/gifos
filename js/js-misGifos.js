@@ -104,7 +104,7 @@ function funcionUpload(form, recorder) {
   }, 600);
 
   const upload = fetch(
-    "http://upload.giphy.com/v1/gifs" + "?api_key=" + apiKey,
+    "https://upload.giphy.com/v1/gifs" + "?api_key=" + apiKey,
     {
       method: "POST", // or 'PUT'
       body: form,
@@ -409,7 +409,7 @@ function cerrarVentanaSubiendo() {
 
 function getURLbyID(gifID) {
   const foundID = fetch(
-    "http://api.giphy.com/v1/gifs/" + gifID + "?api_key=" + apiKey
+    "https://api.giphy.com/v1/gifs/" + gifID + "?api_key=" + apiKey
   )
     .then(response => {
       return response.json();
@@ -515,7 +515,7 @@ function solicitarLocalStorageGuifosID() {
 
 function fetchLocalStorageID(arrayGuifosIDObtenido) {
   const foundIDLocalStorage = fetch(
-    "http://api.giphy.com/v1/gifs/" +
+    "https://api.giphy.com/v1/gifs/" +
       arrayGuifosIDObtenido[i] +
       "?api_key=" +
       apiKey

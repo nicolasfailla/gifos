@@ -21,7 +21,7 @@ function getSearchResults() {
   // FETCH BUSCA TEXTO BUSCADO EN GIPHY
 
   const found = fetch(
-    "http://api.giphy.com/v1/gifs/search?q=" +
+    "https://api.giphy.com/v1/gifs/search?q=" +
       valorTextoBuscador +
       "&api_key=" +
       apiKey +
@@ -172,7 +172,7 @@ function verMasGifos(valorTextoBuscador) {
   }
 
   const found = fetch(
-    "http://api.giphy.com/v1/gifs/search?q=" +
+    "https://api.giphy.com/v1/gifs/search?q=" +
       valorTextoBuscador +
       "&api_key=" +
       apiKey +
