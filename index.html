@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-themeday.css" id="themeCss" />
+   <link rel="stylesheet" type="text/css" href="css/style-responsive.css" /> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet" />
+
+    <title>Index - Proyecto GifOS (Nicolas Failla)</title>
+</head>
+
+<body>
+    <header>
+        <div class="recuadroAzulSuperior" id="recuadroAzulSuperior">
+            <h2>
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+                de visitas: 12.765.803
+            </h2>
+        </div>
+    </header>
+
+    <div class="contGeneral" id="contGeneral">
+        <nav>
+            <div class="fila columnMobile">
+                <div class="logo">
+                    <img src="img/gifOF_logo.png" height="64" id="imagenLogoGifos" alt="logo gifos" />
+                </div>
+
+                <div class="alinearDerecha">
+                    <div class="botonCrear botonCrearActive" id="botonCrear">
+                        <div class="botonCrearHover">
+                            <a href="misgifos.html">Crear Guifos</a>
+                        </div>
+                    </div>
+
+                    <div class="botonElegir" id="botonElegir">
+                        <div class="dropdown">
+                            <div class="dropbtn" id="dropbtn1">
+                                <div class="elegirTema" id="elegirTema">Elegir Tema</div>
+                                <span class="recuadroFlecha"><span class="recuadroFlechaHover"><i
+                                            class="fa fa-caret-down "></i></span></span>
+                            </div>
+                            <div class="dropdown-content" id="myDropdown">
+                                <div class="dropdownEstilo">
+                                    <div class="recuadroSailor" id="botonSailorDay">
+                                        <a class="textoElegirTemaActive" id="textoTemaDay" href="#"><span
+                                                class="subrayado">S</span>ailor Day</a>
+                                    </div>
+                                    <div class="recuadroSailor" id="botonSailorNight">
+                                        <a class="textoElegirTema" href="#" id="textoTemaNight"><span
+                                                class="subrayado">S</span>ailor Night</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="botonMisgifos" id="botonMisgifos">
+                        <a class="botonMisGifosNoActive" href="misgifos.html"><span class="subrayado">M</span>is Guifos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section id="buscador">
+                <div class="buscadorRecuadro columna" id="buscadorRecuadro">
+                    <div class="buscarRecuadroSuperior centerY">
+                        <a class="buscarTexto "> <h2>Buscar</h2></a>
+                    </div>
+
+                    <div class=" fila margencito ">
+                        <div class="buscarFormularioCont">
+                            <form class="formularioCont centerY">
+                                <input class="formularioTexto " type="text" name="textoBuscado"
+                                    placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+                                    id="textoBuscador" /><br />
+                                <div class="contBuscarLupa fila centerY centerX">
+                                    <button class="buscarLupaBoton" type="button" id="buscarLupaBoton">
+                                        <img id="imagenBotonBuscarLupa" src="img/lupa_inactive.svg" alt="lupa que busca" />
+                                        <span class="colorLetraBuscarLupa" id="textoBuscar">Buscar</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="buscarBoton"></div>
+                    </div>
+                </div>
+
+                <div class="dropdownOpciones" id="dropdownOpciones">
+                    <div class="dropdownOpcionesEstilo" id="contGenBusquedasGuardadas"></div>
+                </div>
+            </section>
+        </main>
+
+        <section id="sugerencias">
+
+        <div class="hoytesugerimosCont width100 centerY">
+           <h2>Hoy te sugerimos:</h2> 
+        </div>
+
+        <div class="imagenesSugeridas">
+            <div class="imagenCont">
+                <div class="recuadroSuperiorImagen fila centerY">
+                    <p>#zelda</p>
+                    <div class="cruzCerrarImagen">
+                        <img src="img/close.svg" alt="cruz que cierra imagen" />
+                    </div>
+                </div>
+
+                <div class="imagenCont280x280">
+                    <img
+                        src="https://media2.giphy.com/media/9AooPIXbwxI40/100.gif?cid=72704c3986a39da8f747ee648c8916f8d2e34aa3f70a6567&rid=100.gif" alt="zelda" />
+                    <div class="verMasSobreImagen centerY centerX" onclick="verMasGifos('zelda')">
+                        <p>Ver más...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imagenCont">
+                <div class="recuadroSuperiorImagen fila centerY">
+                    <p>#mario</p>
+                    <div class="cruzCerrarImagen">
+                        <img src="img/close.svg" alt="cruz que cierra imagen" />
+                    </div>
+                </div>
+
+                <div class="imagenCont280x280">
+                    <img
+                        src="https://media1.giphy.com/media/1bqWJ6PDfW5os/100.gif?cid=72704c399c21d3471516fdaa2c392cb15a5a98773c82b5b8&rid=100.gif" alt="mario" />
+                    <div class="verMasSobreImagen centerY centerX" onclick="verMasGifos('mario')">
+                        <p>Ver más...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imagenCont">
+                <div class="recuadroSuperiorImagen fila centerY">
+                    <p>#donkeykong</p>
+                    <div class="cruzCerrarImagen">
+                        <img src="img/close.svg" alt="cruz que cierra imagen" />
+                    </div>
+                </div>
+
+                <div class="imagenCont280x280">
+                    <img
+                        src="https://media2.giphy.com/media/JPxQwBHAEyxm6N6BFh/100.gif?cid=72704c39d545af1fae8bb0bff845230c69664b0b00fa2ec8&rid=100.gif" alt="donkey kong" />
+                    <div class="verMasSobreImagen centerY centerX" onclick="verMasGifos('donkeykong')">
+                        <p>Ver más...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imagenCont">
+                <div class="recuadroSuperiorImagen fila centerY">
+                    <p>#pacman</p>
+                    <div class="cruzCerrarImagen">
+                        <img src="img/close.svg" alt="cruz que cierra imagen" />
+                    </div>
+                </div>
+
+                <div class="imagenCont280x280">
+                    <img
+                        src="https://media2.giphy.com/media/jxJjBMvqEvMSA/100.gif?cid=72704c394b515f01c138f7bc39bc233f18b3f9a5f0b26055&rid=100.gif" alt="pacman" />
+                    <div class="verMasSobreImagen centerY centerX" onclick="verMasGifos('pacman')">
+                        <p>Ver más...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+        <section id="tendencias">
+            <div class="hoytesugerimosCont width100 centerY">
+               <h2>Tendencias</h2> 
+            </div>
+
+            <div class="imagenesTendencias">
+                <div class="imagenesBuscadas">
+                    <div class="imagenesContBuscadas" id="contGeneralBusquedas"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/js-aplicarEstilos.js"></script>
+    <script src="js/js-buscarGifos.js"></script>
+    <script src="js/js-buscadorEstilado.js"></script>
+</body>
+
+</html>
