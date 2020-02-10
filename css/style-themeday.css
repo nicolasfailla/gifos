@@ -1,0 +1,232 @@
+/* VARIABLES TEMAS */
+
+:root {
+  --colorBlanco: #ffffff;
+  --chakra: "Chakra Petch", sans-serif;
+  --bold: 700;
+  --regular: 400;
+  --gradienteDay: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+  --gradienteNight: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+  --colorFondoDay: #fff4fd;
+  --colorFondoNight: #110038;
+  /* VARIABLES TEMAS */
+  --colorFondoRecuadroBuscadorDay: #e6e6e6;
+  --colorFondoRecuadroBuscadorNight: #b4b4b4;
+  --boxShadowRecuadroBuscadorDay: inset -2px -2px 0 0 #b4b4b4,
+    inset 2px 2px 0 0 #ffffff;
+  --boxShadowRecuadroBuscadorNight: inset -2px -2px 0 0 #b4b4b4,
+    inset 2px 2px 0 0 #ffffff;
+  --colorLetraBuscarLupaDay: #b4b4b4;
+  --colorLetraBuscarLupaNight: grey;
+  /* VARIABLES TEMAS */
+  --colorFondoBotonesNavegadorDay: #f7c9f3;
+  --colorFondoBotonesNavegadorNight: #ee3efe;
+  --boxShadowBotonesNavegadorDay: inset -1px -1px 0 0 #997d97,
+    inset 1px 1px 0 0 #ffffff;
+  --boxShadowBotonesNavegadorNight: inset -1px -1px 0 0 #a72cb3,
+    inset 1px 1px 0 0 #ffffff;
+  /* VARIABLES TEMAS */
+  --colorLetraBotonMisgifosDay: #110038;
+  --colorLetraBotonMisgifosNight: #ffffff;
+  /* VARIABLES TEMAS */
+  --colorFondoVermasDay: #4180f6;
+  --colorFondoVermasNight: #2e32fb;
+  /*ESTA VARIABLE APLICA PARA ACTIVE DE ELEIR TEMA NIGHT TAMBIEN */
+  --boxShadowVermasDay: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  --boxShadowVermasNight: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+  /* VARIABLES TEMAS */
+
+  --colorFondoBotonActiveDay: #fff4fd;
+  --colorFondoBotonInactiveDay: #f0f0f0;
+
+  --colorFondoRecuadroDropdownElegirDay: #e6e6e6;
+  --boxShadowFondoRecuadroDropdownElegirDay: inset -2px -2px 0 0 #b4b4b4,
+    inset 2px 2px 0 0 #ffffff;
+
+  --borderBotonActiveDay: 1px solid #cca6c9;
+  --borderBotonInactiveDay: 1px solid #808080;
+  /*NO HACE FALTA AGREGAR A JAVASCRIPT */
+
+  --boxShadowBotonActiveDay: inset -1px -1px 0 0 #e6dce4,
+    inset 1px 1px 0 0 #ffffff;
+  --boxShadowBotonInactiveDay: inset -1px -1px 0 0 #b4b4b4,
+    inset 1px 1px 0 0 #ffffff;
+  /*NO HACE FALTA AGREGAR A JAVASCRIPT */
+
+  --colorLetraSailorNightActiveDay: #110038;
+
+  /* VARIABLES TEMAS */
+  --colorFondoBotonActiveNight: #2e32fb;
+  --colorFondoBotonInactiveDay: #cccccc;
+
+  --colorFondoRecuadroDropdownElegirNight: #b4b4b4;
+  --boxShadowFondoRecuadroDropdownElegirNight: inset -2px -2px 0 0 #8f8f8f,
+    inset 2px 2px 0 0 #ffffff;
+
+  --borderBotonActiveNight: 1px solid rgba(51, 53, 143, 0.2);
+  --boxShadowBotonActiveNight: inset -1px -1px 0 0 #e6dce4,
+    inset 1px 1px 0 0 #ffffff;
+
+  --colorLetraSailorNightActiveNight: #ffffff;
+  /* VARIABLES TEMAS */
+  --colorFondoHoverBotonNavegadorDay: #e6bbe2;
+  --colorFondoHoverBotonNavegadorNight: #ce36db;
+
+  --colorLetraTextoForm: #b4b4b4;
+}
+
+/* VARIABLES TEMAS */
+
+.contGeneral {
+  background-color: var(--colorFondoDay);
+}
+
+/* RECUADRO AZUL DE ARRIBA */
+
+.recuadroAzulSuperior {
+  color: var(--colorBlanco);
+  background-image: var(--gradienteDay);
+}
+
+/* RECUADRO AZUL DE ARRIBA */
+
+/* BOTON CREAR */
+
+.botonCrear {
+  background-color: var(--colorFondoBotonesNavegadorDay);
+  box-shadow: var(--boxShadowBotonesNavegadorDay);
+  color: var(--colorLetraBotonMisgifosDay);
+}
+
+.botonCrear:hover {
+  background-color: var(--colorFondoHoverBotonNavegadorDay);
+}
+
+/* BOTON CREAR */
+
+/* DROPDOWN ELEGIR TEMA */
+
+.botonElegir {
+  background-color: var(--colorFondoBotonesNavegadorDay);
+  box-shadow: var(--boxShadowBotonesNavegadorDay);
+}
+
+.botonElegir:hover {
+  background-color: var(--colorFondoHoverBotonNavegadorDay);
+}
+
+.elegirTema {
+  color: var(--colorLetraBotonMisgifosDay);
+}
+
+.recuadroFlecha {
+  color: var(--colorLetraBotonMisgifosDay);
+}
+
+.dropdownEstilo {
+  background-color: var(--colorFondoRecuadroDropdownElegirDay);
+  box-shadow: var(--boxShadowFondoRecuadroDropdownElegirDay);
+}
+
+.textoElegirTema {
+  background: var(--colorFondoBotonInactiveDay);
+}
+
+.textoElegirTemaActive {
+  background: var(--colorFondoBotonActiveDay);
+  border: var(--borderBotonActiveDay);
+  box-shadow: var(--boxShadowBotonActiveDay);
+  color: var(--colorLetraSailorNightActiveDay);
+}
+
+/* DROPDOWN ELEGIR TEMA */
+
+/* BOTON MIS GIFOS */
+/*
+.botonMisgifos{
+  
+  color: var(--colorLetraBotonMisgifosDay);
+}
+*/
+
+.botonMisgifos:hover,
+.botonMisgifosNight:hover {
+  border: 1px solid var(--colorLetraBotonMisgifosDay);
+}
+
+/* BOTON MIS GIFOS */
+
+/* BUSCADOR */
+
+.buscarRecuadroSuperior {
+  background-image: var(--gradienteDay);
+}
+
+.buscarTexto {
+  font-family: var(--chakra);
+  font-weight: var(--bold);
+}
+
+.buscadorRecuadro {
+  background: var(--colorFondoRecuadroBuscadorDay);
+  box-shadow: var(--boxShadowRecuadroBuscadorDay);
+}
+
+.recuadroFlechaNight {
+  color: var(--colorLetraBotonMisgifosDay);
+}
+
+.formularioTexto {
+  color: var(--colorLetraTextoForm);
+}
+
+.contBuscarLupa {
+  background: var(--colorFondoRecuadroBuscadorDay);
+}
+
+.buscarLupaBoton {
+  background: var(--colorFondoRecuadroBuscadorDay);
+}
+
+.buscarLupaBotonActive {
+  background: var(--colorFondoBotonesNavegadorDay);
+}
+
+.colorLetraBuscarLupa {
+  color: var(--colorLetraBuscarLupaDay);
+}
+
+/* BUSCADOR */
+
+/* EMPIEZA DROPDOWN BUSCADOR */
+
+.dropdownOpcionesEstilo {
+  background-color: var(--colorFondoRecuadroBuscadorDay);
+}
+
+.recuadroResultado {
+  background: var(--colorFondoVermasDay);
+}
+
+/* TERMINA DROPDOWN BUSCADOR */
+
+/* EMPIEZA IMAGENES HARDCODEADAS */
+
+.recuadroSuperiorImagen {
+  background-image: var(--gradienteDay);
+}
+
+.verMasSobreImagen {
+  background: var(--colorFondoVermasDay);
+
+  box-shadow: var(--boxShadowVermasDay);
+}
+
+/* TERMINA IMAGENES HARDCODEADAS */
+
+/* HOVER A GIFO BORDE */
+
+.divBackground:hover {
+  outline: 4px solid var(--colorFondoNight);
+  outline-offset: -4px;
+}
